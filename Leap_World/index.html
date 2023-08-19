@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+        <meta charset="utf-8">
+        <title>Leap World</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        
+        <meta property="og:url" content="index.html">
+        <meta name='twitter:url' content='index.html'>
+
+        <meta property="og:image" content="../i.imgur.com/CBsCCqa.png">
+        <meta property="og:image:url" content="../i.imgur.com/CBsCCqa.png">
+        <meta property="og:image:secure_url" content="../i.imgur.com/CBsCCqa.png" /> 
+        <meta name="twitter:image" content="../i.imgur.com/CBsCCqa.png">
+
+
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="../ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/index.js"></script>
+        <link rel="icon" type="image/x-icon" href="/assets/Head.png">
+    </head>
+    <body>
+        <div class="nav-mobile-overlay hide" id="navMobileOverlay" style="display: none;">
+            <div class="nav-mobile-links">
+                <div class="nav-mobile-link-wrapper">
+                    <a class="nav-mobile-link" target="_blank" rel="noopener noreferrer" href="" style="--animation-order: 1;">Level Builder</a>
+                </div>
+                <div class="nav-mobile-link-wrapper">
+                    <a class="nav-mobile-link" target="_blank" rel="noopener noreferrer"  href=""  style="--animation-order: 2;">News</a>
+                </div>
+                <div class="nav-mobile-link-wrapper">
+                    <a class="nav-mobile-link" target="_blank" rel="noopener noreferrer"  href="" style="--animation-order: 3;">Roadmap</a>
+                </div>
+                <div class="nav-mobile-link-wrapper">
+                    <a class="nav-mobile-link" href="team.html" style="--animation-order: 4;">Team</a>
+                </div>
+                <div class="nav-mobile-link-wrapper">
+                    <a class="nav-mobile-link" target="_blank" rel="noopener noreferrer" href="" style="--animation-order: 5;">Twitter</a>
+                </div>
+                <div class="nav-mobile-link-wrapper">
+                    <a class="nav-mobile-link" target="_blank" rel="noopener noreferrer" href="" style="--animation-order: 6;">Discord</a>
+                </div>
+                <div class="nav-mobile-link-wrapper">
+                    <a class="nav-mobile-link" target="_blank" rel="noopener noreferrer" href="" style="--animation-order: 7;">OpenSea</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav">
+            <a href="index.html" class="nav-logo">
+                <img src="" alt="">
+            </a>
+            <div class="nav-links">
+                
+                <a class="nav-link icon" target="_blank" rel="noopener noreferrer" href="https://twitter.com/LeapWorldNFT">
+                    <img src="assets/twitterWhite.png" alt="twitter">
+                </a>
+                <a class="nav-link icon" target="_blank" rel="noopener noreferrer" href="https://discord.com/invite/AxRCsdn3hg">
+                    <img src="assets/discordWhite.png" alt="discord">
+                </a>
+                <a class="nav-link icon" target="_blank" rel="noopener noreferrer" href="http://t.me/LeapWorld_portal">
+                    <img src="assets/telegram.png" alt="telegram">
+                </a>
+                <a class="nav-link icon" target="_blank" rel="noopener noreferrer" href="https://basescan.org/token/0x054a582a05c6422f5b6591be085a24e2da0b5c39#balances">
+                    <img src="assets/ET.png" alt="etherscan">
+                </a>
+                <a class="nav-link" target="_blank" rel="noopener noreferrer" href="game.html"> Play </a>
+            </div>
+
+            <div class="nav-mobile">
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+            </div>
+        </div>
+            <div class="hero-art" id="heroParallax">
+                <div class="hero-art-layer parallax" data-speed="5" id="heroLayer0"></div>
+                <div class="hero-art-layer parallax" data-speed="10" id="heroLayer1"></div>
+                <div class="hero-art-layer parallax" data-speed="16" id="heroLayer2"></div>
+                <div class="hero-art-layer parallax" data-speed="26" id="heroLayer3"></div>
+                <div class="hero-art-layer parallax" data-speed="36" id="heroLayer4"></div>
+                <div class="hero-art-layer parallax" data-speed="69" id="heroLayer5"></div>
+                <div class="hero-art-layer parallax" data-speed="80" id="heroLayer6"></div>
+                <div class="hero-art-layer" data-speed="100" id="heroLayer7"></div>
+
+                <<div class="hero-art-layer parallax main-section" data-speed="25" id="heroMainSection">
+                    <img src="assets/logo12.png" class="hero-logo" id="heroLogo" alt="">
+                    
+                    <div class="hero-tagline" id="heroTagline2">
+                        0x24212eEb0595999A27C78179D33124AD5B877c32
+                        <span id="copySymbol" style="cursor: pointer;">📋</span>
+                    </div>
+                    <div class="hero-button-section">
+                        <a class="hero-button left" target="_blank" rel="noopener noreferrer" href="https://baseswap.fi/">GET $LEAP</a>
+                    </div>
+                </div>
+                <script>
+                    document.getElementById("copySymbol").onclick = function() {
+                        let text = document.getElementById("heroTagline2").textContent;
+                        navigator.clipboard.writeText(text);
+                    }
+                </script>
+            </div>
+
+            <div class="token-section" id="tokenSection">
+                <div class="token-container">
+                    <div class="hero-art" id="heroParallax">
+                        <div class="hero-art-layer parallax" data-speed="5" id="heroLayer0"></div>
+                        <div class="hero-art-layer parallax" data-speed="10" id="heroLayer1"></div>
+                        <div class="hero-art-layer parallax" data-speed="16" id="heroLayer2"></div>
+                        <div class="hero-art-layer parallax" data-speed="26" id="heroLayer3"></div>
+                        <div class="hero-art-layer parallax" data-speed="36" id="heroLayer4"></div>
+                        <div class="hero-art-layer parallax" data-speed="69" id="heroLayer5"></div>
+                        <div class="hero-art-layer parallax" data-speed="80" id="heroLayer6"></div>
+                        <div class="hero-art-layer" data-speed="100" id="heroLayer7"></div>
+                    </div>
+                    <!-- Resized image container -->
+                    <div class="image-container">
+                        <div class="logo-container">
+                            <img src="/assets1/Logox1.png" alt="Logo">
+                        </div>
+                        <img src="/assets/aboute.png" alt="Image" class="fit-to-screen">
+                    </div>
+                </div>
+            </div>
+            <!--tokenomics section-->
+            <div class="tokenomics" id="tokenSection">
+                <div class="tokenomics-container">
+                    <div class="hero-art" id="heroParallax">
+                        <div class="hero-art-layer parallax" data-speed="5" id="heroLayer0"></div>
+                        <div class="hero-art-layer parallax" data-speed="10" id="heroLayer1"></div>
+                        <div class="hero-art-layer parallax" data-speed="16" id="heroLayer2"></div>
+                        <div class="hero-art-layer parallax" data-speed="26" id="heroLayer3"></div>
+                        <div class="hero-art-layer parallax" data-speed="36" id="heroLayer4"></div>
+                        <div class="hero-art-layer parallax" data-speed="69" id="heroLayer5"></div>
+                        <div class="hero-art-layer parallax" data-speed="80" id="heroLayer6"></div>
+                        <div class="hero-art-layer" data-speed="100" id="heroLayer7"></div>
+                    </div>
+                    <div class="tcontainer">
+                        <p class="custom-text">TOKENOMICS</p>
+                        <div class="tt-container">
+                            <img src="/assets/T2.png" alt="Image 1" class="fit-to-screen">
+                            <img src="/assets/T1.png" alt="Image 2" class="fit-to-screen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!--roadmap section-->
+             <div class="roadmap" id="roadmapSection">
+                <div class="roadmap-container">
+                    <div class="hero-art" id="heroParallax">
+                        <div class="hero-art-layer parallax" data-speed="5" id="heroLayer0"></div>
+                        <div class="hero-art-layer parallax" data-speed="10" id="heroLayer1"></div>
+                        <div class="hero-art-layer parallax" data-speed="16" id="heroLayer2"></div>
+                        <div class="hero-art-layer parallax" data-speed="26" id="heroLayer3"></div>
+                        <div class="hero-art-layer parallax" data-speed="36" id="heroLayer4"></div>
+                        <div class="hero-art-layer parallax" data-speed="69" id="heroLayer5"></div>
+                        <div class="hero-art-layer parallax" data-speed="80" id="heroLayer6"></div>
+                        <div class="hero-art-layer" data-speed="100" id="heroLayer7"></div>
+                    </div>
+                    <div class="rcontainer">
+                        <p class="custom-text">Roadmap</p>
+                        <div class="rt-container">
+                            <div class="rm-container">
+                                <img src="/assets/r1.png" alt="Image 1" class="roadmapscreen">
+                            </div>
+                            <div class="rm-container">
+                                <img src="/assets/r2.png" alt="Image 2" class="roadmapscreen">
+                            </div>
+                            <div class="rm-container center-image">
+                                <img src="/assets/r3.png" alt="Image 3" class="roadmapscreen">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- how to buy -->
+            <div class="buy" id="buySection">
+                <div class="buy-container">
+                    <div class="hero-art" id="heroParallax">
+                        <div class="hero-art-layer parallax" data-speed="5" id="heroLayer0"></div>
+                        <div class="hero-art-layer parallax" data-speed="10" id="heroLayer1"></div>
+                        <div class="hero-art-layer parallax" data-speed="16" id="heroLayer2"></div>
+                        <div class="hero-art-layer parallax" data-speed="26" id="heroLayer3"></div>
+                        <div class="hero-art-layer parallax" data-speed="36" id="heroLayer4"></div>
+                        <div class="hero-art-layer parallax" data-speed="69" id="heroLayer5"></div>
+                        <div class="hero-art-layer parallax" data-speed="80" id="heroLayer6"></div>
+                        <div class="hero-art-layer" data-speed="100" id="heroLayer7"></div>
+                    </div>
+                    <div class="bcontainer">
+                        <p class="custom-text">How to Buy</p>
+                        <div class="centered-image">
+                            <img src="/assets/htb1.png" alt="Centered Image">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+             <!-- contact  -->
+             <div class="contact" id="contactSection">
+                <div class="contact-container">
+                    <div class="hero-art" id="heroParallax">
+                        <div class="hero-art-layer parallax" data-speed="5" id="heroLayer0"></div>
+                        <div class="hero-art-layer parallax" data-speed="10" id="heroLayer1"></div>
+                        <div class="hero-art-layer parallax" data-speed="16" id="heroLayer2"></div>
+                        <div class="hero-art-layer parallax" data-speed="26" id="heroLayer3"></div>
+                        <div class="hero-art-layer parallax" data-speed="36" id="heroLayer4"></div>
+                        <div class="hero-art-layer parallax" data-speed="69" id="heroLayer5"></div>
+                        <div class="hero-art-layer parallax" data-speed="80" id="heroLayer6"></div>
+                        <div class="hero-art-layer" data-speed="100" id="heroLayer7"></div>
+                    </div>
+                    <div class="ccontainer">
+                        <div class="logo-container">
+                            <img src="/assets/Logox1.png" alt="Logo" class="logo-image">
+                        </div>
+                        <div class="button-container">
+                            <a href="#">
+                                <img src="/assets/ctb.png" alt="Contact Us" class="contact-button-image" href="https://baseswap.fi/">
+                            </a>
+                        </div>
+                        <div class="social-media-icons">
+                            <a href="https://twitter.com/LeapWorldNFT" target="_blank">
+                                <img src="/assets/tw.png" alt="Twitter" class="social-icon">
+                            </a>
+                            <a href="https://discord.com/invite/AxRCsdn3hg" target="_blank">
+                                <img src="/assets/ds.png" alt="Discord" class="social-icon">
+                            </a>
+                            <a href="http://t.me/LeapWorld_portal" target="_blank">
+                                <img src="/assets/tl.png" alt="Telegram" class="social-icon">
+                            </a>
+                            <a href="https://basescan.org/token/0x054a582a05c6422f5b6591be085a24e2da0b5c39#balances" target="_blank">
+                                <img src="/assets/es.png" alt="LinkedIn" class="social-icon">
+                            </a>
+                        </div>
+                        
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

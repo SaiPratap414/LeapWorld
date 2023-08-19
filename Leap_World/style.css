@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Librium';
+    src: url(/Librium/Librium\ Regular.ttf) format('truetype');
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(/assets1/bg2.png);
+    background-size: cover;   
+}
+
+a{
+    text-decoration: none;
+}
+.wrapper{
+    padding: 125px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    
+}
+.services{
+    width: 1100px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.single-img{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    width: 325px;
+    height: 450px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+    transform: translate(0, 0);
+    transition: .3s;
+}
+.single-img:hover{
+    transform: translate(0, -9px);
+}
+.img-one{
+    background-image: url(/assets1/Group\ 12.png);
+    background-size: cover;
+    background-position: center center;
+}
+.img-two{
+    background-image: url(/assets1/Asset\ 5.png);
+    background-size: cover;
+    background-position: center center;
+}
+.img-three{
+    background-image: url(/assets1/Group\ 14.png);
+    background-size: cover;
+    background-position: center center;
+}
+.img-text{
+    background: linear-gradient(to top,#041527,rgba(255, 255, 255, 0));
+    padding: 0 10px 5px 10px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    transform: translate(0, 110px);
+    line-height: 30px;
+    transition: 0.5s ease;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+}
+
+.img-text h4{
+    line-height: 15px;
+    padding: 0;
+    margin: 15px 0;
+    font-family: 'Librium', sans-serif;
+    font-size: 25px;
+}
+.img-text p {
+    font-family: 'Librium', sans-serif;
+    font-size: 14px;
+    line-height: 2.0;
+    color: #fff;
+    width: 95%;
+}
+  
+.services button{
+    background: #b261e0e7;
+    color: #fff;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 40px;
+    line-height: 14px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-family: 'Librium', sans-serif;
+}
+.single-img:hover .img-text{
+    transform: translate(0, 0);
+}
+
+.our-games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.our-games h2 {
+    color: white;
+    font-family: 'Librium', sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: -50px;
+}
+.img-wrapper {
+    position: relative;
+    
+  }
+  .white-line {
+    position: relative;
+    bottom: 0;
+    width: 90%;
+    height: 3px;
+    background-color: white;
+  }
+  
+
+@media (max-width: 991px){
+    .wrapper{
+        padding: 0;
+    }
+    .services{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    a{
+        margin-bottom: 35px;
+    }
+}
